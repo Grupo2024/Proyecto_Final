@@ -24,11 +24,11 @@ class Colegio(models.Model):
     nombre = models.CharField(max_length=40)
 
     def __str__(self):
-        return 'Nombre: {} y el pibe {}'.format(self.nombre, self.delegado.nombre)
+        return 'Nombre: {}'.format(self.nombre)
 
 
 class Delegado(Persona):
-    colegio = models.OneToOneField(Colegio)
+    colegio = models.ForeignKey(Colegio)
 
     def __str__(self):
         return 'Colegio: {}'.format(self.colegio.nombre)
@@ -62,7 +62,7 @@ class Jugador(Persona):
     equipo = models.ForeignKey(Equipo)#Un equipo tiene muchas personas que lo conforman
 
     def __str__(self):
-        return 'Equipo: {}'.format(self.equipo.nombre)
+        return 'Nombre: {}'.format(self.nombre)
 
 
 
