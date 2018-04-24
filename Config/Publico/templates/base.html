@@ -1,0 +1,40 @@
+ <!DOCTYPE html>
+ {% load static %}
+<html class="newFont">
+	<head>
+		<!--Importamos Google Icon Font-->
+		<link href="{% static 'materialize/icons/material_icons.css' %}" rel="stylesheet">
+		<!--Importamos materialize.css-->
+		<link type="text/css" rel="stylesheet" href="{% static 'materialize/css/materialize.min.css' %}"  media="screen,projection"/>
+		<!-- Plantilla de estilos externa -->
+		<link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link type="text/css" rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/jszip-2.5.0/dt-1.10.16/b-1.4.2/b-colvis-1.4.2/b-html5-1.4.2/b-print-1.4.2/datatables.min.css"/>
+
+		<!--Permitirle al navegador saber si está optimizado para dispositivos móviles-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"/>
+         <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">Logo</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="sass.html">Sass</a></li>
+                <li><a href="badges.html">Components</a></li>
+                <li><a href="collapsible.html">JavaScript</a></li>
+                </ul>
+            </div>
+        </nav>
+	</head>
+
+    <body>
+
+        <script type="text/javascript" src="{% static 'jquery/jquery-3.2.1.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'materialize/js/materialize.min.js' %}"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.4.2/js/dataTables.buttons.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.32/pdfmake.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.32/vfs_fonts.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/v/dt/jszip-2.5.0/dt-1.10.16/b-1.4.2/b-colvis-1.4.2/b-html5-1.4.2/b-print-1.4.2/datatables.min.js"></script>
+
+    </body>
+  </html>
